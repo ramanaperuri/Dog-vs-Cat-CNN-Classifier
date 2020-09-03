@@ -9,11 +9,17 @@ based on the Kaggle Dogs vs Cats dataset which contains 25000 labeled images and
 
 - The Kaggle dataset : https://www.kaggle.com/c/dogs-vs-cats
 
-My original idea was to make the classifier app with 2 CNN models:
+My original idea was to make the classifier app with 2 CNN models and compare them:
 - 1 'home made' trained from scratch on the Kaggle dataset images 
 and 
 - 1 finetuned via transfer learning on the Kaggle dataset, based on the MobileNetV2 CNN 
 The MobileNetV2 was originally trained on 1000+ classes and millions of images in the ImageNet dataset.
+
+The python code for the 'home made' CNN can be found in the repo below under 'Test CatsvsDogs.py, the model under is saved as 'model_epochs.h5'.
+ - https://github.com/kristof-becode/Deep-Learning/tree/master/Keras/Kaggle%20Dogs%20vs%20Cats
+ 
+ The python code for the feature extraction and finetuning for the transfer learning can be found in 'Test CatsvsDogs MobileNet V2.py' and the trained models as the.h5 files. The finetuned model is the one to use.
+- https://github.com/kristof-becode/Deep-Learning/tree/master/Keras/Transfer%20Learning%20with%20MobileNetV2
 
 Due to Heroku server space limitations I couldn't make an app with both models so I decided to include only my 'home made' CNN.
 - images were seperated by label and read from directory, split into training and validation subsets with keras.preprocessing module image_dataset_from_directory
