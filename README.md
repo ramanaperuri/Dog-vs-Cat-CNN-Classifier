@@ -16,8 +16,10 @@ and
 The MobileNetV2 was originally trained on 1000+ classes and millions of images in the ImageNet dataset.
 
 **CODE LINKS**
+
 The python code for the 'home made' CNN can be found in the repo below under 'Test CatsvsDogs.py, the model under is saved as 'model_epochs.h5'.
  - https://github.com/kristof-becode/Deep-Learning/tree/master/Keras/Kaggle%20Dogs%20vs%20Cats
+ 
  The python code for the feature extraction and finetuning for the transfer learning can be found in 'Test CatsvsDogs MobileNet V2.py' and the trained models as the.h5 files. The finetuned model is the one to use.
 - https://github.com/kristof-becode/Deep-Learning/tree/master/Keras/Transfer%20Learning%20with%20MobileNetV2
 
